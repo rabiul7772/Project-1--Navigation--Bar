@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Great+Vibes&family=Indie+Flower&family=Roboto:ital@1&family=Tangerine:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 16px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* nav container start */
+
+nav {
+  width: 100%;
+  height: 65px;
+  background-color: dodgerblue;
+}
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  /* to centre all the items which are in the container*/
+  align-items: center;
+}
+
+/* nav container end */
+
+/* brand section start */
+
+.brand-section {
+  display: flex;
+  align-items: center;
+}
+.brand-logo {
+  margin-right: 1rem;
+}
+.brand-logo span {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.brand-title a {
+  /* to remove underlined */
+  text-decoration: none;
+  color: #fff;
+}
+
+/* brand section end */
+
+/* main menu section start */
+
+.main-menu {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.main-menu a,
+.right-menu a {
+  /* to margin all the elements which are in the main menu section , first i should use display:inline-block */
+  display: inline-block;
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.main-menu a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+/* main menu section end */
+
+/* right menu section start */
+
+.right-menu {
+  display: flex;
+  align-items: center;
+  /* to put right menu section to the right*/
+  margin-left: auto;
+}
+.right-menu button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.right-menu button > span {
+  font-size: 2rem;
+}
+/* right menu section end */
+
+/* drop down section start */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-items {
+  /* if we hover over account symbol which is under the dropdown class then we will see the dropdown-items as a block*/
+  display: block;
+  background-color: white;
+}
+
+.dropdown > .dropdown-items {
+  position: absolute;
+  right: 0%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  width: 200px;
+  border-radius: 0.15rem;
+  display: none;
+}
+.dropdown-items-ul {
+  list-style-type: none;
+}
+
+.dropdown-item-li {
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+.dropdown-item-li:hover {
+  background-color: skyblue;
+}
+.dropdown-item-li a {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+.divider {
+  border: none;
+  background-color: #ddd;
+}
+
+/* drop down section end */
+
+/* mega menu section start */
+.mega-menu {
+  position: relative;
+  padding: 1.3rem 0;
+}
+.mega-menu:hover .mega-menu-container {
+  display: block;
+}
+
+.mega-menu-container {
+  position: absolute;
+  top: 100%;
+  /* to see the mega menu container 100% from the top to bottom */
+  width: 700px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 #666;
+  display: none;
+  /* display none is used for using hover  */
+}
+.mega-menu-container-items {
+  margin-left: 2rem;
+}
+.mega-menu-container-items li {
+  list-style-type: decimal;
+  font-size: 1.5rem;
+  color: #666;
+  margin-right: 0%;
+}
+.category-one {
+  float: left;
+  margin-right: 3rem;
+}
+
+/* mega menu section end */
